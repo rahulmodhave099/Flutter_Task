@@ -26,29 +26,29 @@ class QuizApp extends StatefulWidget {
 class _QuizAppState extends State<QuizApp> {
   List<Map> allQuestions = [
     {
-      "question":"Who is the founder of Microsoft ?",
-      "options": ["Steave Jobs","Bill Gates","Larry Page","Elon Musk"],
-      "correctOption":1
-    },
-    {
-      "question":"Who is the founder of Google ?",
-      "options": ["Steave Jobs","Bill Gates","Larry Page","Elon Musk"],
+      "question":"Main axis for column widget is in which direction ?",
+      "options": ["horizontal","center","vertical","no main axis"],
       "correctOption":2
     },
     {
-      "question":"Who is the founder of SpaceX ?",
-      "options": ["Steave Jobs","Bill Gates","Larry Page","Elon Musk"],
+      "question":"Which Flutter class is used to define the style of text in a Text widget ?",
+      "options": ["FontStyle","TextStyle","TextFormat","TextTheme"],
+      "correctOption":1
+    },
+    {
+      "question":"To Specify the children for column widget we need to give ___",
+      "options": ["Set of widgets","List of widgets","Map of widgets","string of widgets"],
+      "correctOption":1
+    },
+    {
+      "question":"____ numbers of children are required in Column widget only to use the widget.",
+      "options": ["2","3","1","0"],
       "correctOption":3
     },
     {
-      "question":"Who is the founder of Apple ?",
-      "options": ["Steave Jobs","Bill Gates","Larry Page","Elon Musk"],
-      "correctOption":0
-    },
-    {
-      "question":"Who is the founder of Meta ?",
-      "options": ["Steave Jobs","Mark Zukerberg","Larry Page","Elon Musk"],
-      "correctOption":1
+      "question":"Which of the following is not the parameter of the SizedBox Widget ?",
+      "options": ["height","width","decoration","key"],
+      "correctOption":2
     }
   ];
 
