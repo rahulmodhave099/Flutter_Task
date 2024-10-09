@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class StartStart extends StatelessWidget{
-  const StartStart({super.key});
+class StartCenter extends StatelessWidget{
+  const StartCenter({super.key});
 
   @override
   Widget build(BuildContext context){
@@ -16,7 +16,7 @@ class StartStart extends StatelessWidget{
         color: Colors.redAccent,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Container(
               padding: const EdgeInsets.all(10),
