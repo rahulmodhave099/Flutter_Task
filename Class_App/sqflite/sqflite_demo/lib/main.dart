@@ -22,6 +22,27 @@ Future<List<Map<String,dynamic>>> showData() async {
 
 }
 
+void updateData(Demo obj)async {
+  Database localDB = await database;
+
+  localDB.update("Information",
+   obj.demoMap(),
+   where: "mobile = ?",
+   whereArgs: [obj.mobile],
+   );
+}
+
+void deleteData(Demo obj)async {
+
+  Database localDB = await database;
+
+  localDB.delete("Information",
+  where : "mobile = ?",
+  whereArgs: [obj.mobile],
+  );
+
+}
+
 void main()async {
 
   WidgetsFlutterBinding.ensureInitialized();
@@ -48,9 +69,16 @@ void main()async {
 
   insertData(obj2);
 
-  List<Map> data = await showData();
+  print(await showData());
 
-  print(data);
+  obj2 = Demo(fname: obj2.fname, lname: obj2.lname, age:25.1 , mobile: obj2.mobile);
 
+  updateData(obj2);
+
+  print(await showData());
+
+  deleteData(obj2);
+
+  print(await showData());
 
 }
