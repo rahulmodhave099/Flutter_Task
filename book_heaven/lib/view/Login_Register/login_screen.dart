@@ -1,4 +1,3 @@
-import 'dart:developer';
 import 'package:book_heaven/controller/login_register_bloc/login_register_event.dart';
 import 'package:book_heaven/controller/login_register_bloc/login_register_state.dart';
 import 'package:book_heaven/view/Login_Register/Widgets/custom_textfield.dart';
@@ -29,14 +28,12 @@ class LoginScreen extends StatelessWidget {
           listener: (context, state) {
             ///NAVIGATE TO HOMESCREEN
             if (state is LoginWithDataState) {
-              log("In LoginWithData to home");
               Navigator.of(context).pushReplacement(MaterialPageRoute(
                   builder: (context) => const NavbarScreen()));
             }
 
             ///NAVIGATE TO REGISTERSCREEN
             else if (state is RegisterNavigateState) {
-              log("In Login to Register");
 
               Navigator.of(context).push(MaterialPageRoute(
                   builder: (context) => const RegisterScreen()));
