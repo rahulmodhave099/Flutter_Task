@@ -51,7 +51,7 @@ class LoginRegisterBloc extends Bloc<LoginRegisterEvent, LoginRegisterState> {
       }
     } else {
       emit(LoginRegisterWithDataErrorState(
-          error: "Please Enter Email And Password"));
+          error: "Please Enter Valid Data : Email And Password"));
     }
   }
 
@@ -70,7 +70,7 @@ class LoginRegisterBloc extends Bloc<LoginRegisterEvent, LoginRegisterState> {
       }
     } else {
       emit(LoginRegisterWithDataErrorState(
-          error: "Please Enter Name, Email, Password And Select Gender"));
+          error: "Please Fill all details"));
     }
   }
 
@@ -92,7 +92,6 @@ class LoginRegisterBloc extends Bloc<LoginRegisterEvent, LoginRegisterState> {
     emit(RadioSelectionState(selectedValue: selectedGender));
   }
 
-  /// **Checkbox Selection**
   FutureOr<void> onCheckboxSelectionEvent(
       OnCheckboxSelectionEvent event, Emitter<LoginRegisterState> emit) {
     isChecked = event.isChecked;
