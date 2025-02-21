@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "765338404554",
+    "project_id": "book-heaven-4d424",
+    "storage_bucket": "book-heaven-4d424.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:765338404554:android:4c8b2dcf664f8a70739633",
+        "android_client_info": {
+          "package_name": "com.example.book_heaven"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWxAVd8nymDGyZtPGjgTyFAnVOwXbcR5Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
